@@ -1,0 +1,33 @@
+/* Main App Container */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Sections Styling */
+section {
+  width: 100%;
+  padding: 80px 20px;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  .footer {
+    padding: 20px 20px;
+    font-size: 12px;
+  }
+}

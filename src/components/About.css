@@ -1,0 +1,163 @@
+/* About Section */
+.about {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* About Content */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.about-card {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.1);
+  border-color: #6366f1;
+}
+
+.about-card h3 {
+  font-size: 22px;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* Interests */
+.about-interests h3 {
+  font-size: 22px;
+  color: #1f2937;
+  margin-bottom: 25px;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.interest-item {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.interest-item:hover {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.25);
+  border-color: #6366f1;
+}
+
+.interest-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.interest-item p {
+  color: #6b7280;
+  font-weight: 600;
+  margin: 0;
+}
+
+.interest-item:hover p {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-card {
+    padding: 30px;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .interest-item {
+    padding: 20px;
+  }
+
+  .interest-icon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .about-card h3,
+  .about-interests h3 {
+    font-size: 18px;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
